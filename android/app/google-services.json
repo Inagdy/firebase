@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "48371339869",
+    "project_id": "fir-project-f7590",
+    "storage_bucket": "fir-project-f7590.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48371339869:android:6806b89937ecfbd043f3b4",
+        "android_client_info": {
+          "package_name": "com.example.firebase_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn-7h7660carZdiLJe8obRNtDqMSjlspk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
