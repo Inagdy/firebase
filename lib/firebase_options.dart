@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -33,10 +30,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -62,6 +56,27 @@ class DefaultFirebaseOptions {
     messagingSenderId: '48371339869',
     projectId: 'fir-project-f7590',
     storageBucket: 'fir-project-f7590.firebasestorage.app',
+    androidClientId: '48371339869-d15kq01kftvoe9077f0eag8t252gqqtk.apps.googleusercontent.com',
+    iosClientId: '48371339869-ln06bf5cmgll8bv3m8ojlcqveo2e2h4c.apps.googleusercontent.com',
     iosBundleId: 'com.example.firebaseProject',
+  );
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAI5uXaO2PXo2Lc86wwFZuZIBaNlmnQ9nA',
+    appId: '1:48371339869:web:ed8573ddaa7ebb8a43f3b4',
+    messagingSenderId: '48371339869',
+    projectId: 'fir-project-f7590',
+    authDomain: 'fir-project-f7590.firebaseapp.com',
+    storageBucket: 'fir-project-f7590.firebasestorage.app',
+    measurementId: 'G-78LQ4CVD81',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyAI5uXaO2PXo2Lc86wwFZuZIBaNlmnQ9nA',
+    appId: '1:48371339869:web:4c18dae59427390c43f3b4',
+    messagingSenderId: '48371339869',
+    projectId: 'fir-project-f7590',
+    authDomain: 'fir-project-f7590.firebaseapp.com',
+    storageBucket: 'fir-project-f7590.firebasestorage.app',
+    measurementId: 'G-9XDMZVSZ3D',
   );
 }
